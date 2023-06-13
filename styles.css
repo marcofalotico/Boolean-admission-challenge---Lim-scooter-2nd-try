@@ -78,7 +78,9 @@ body {
 /* poichè i bottoni dentro il loro box non sono più flex items, devo
 per forza rimettere display:flex al buttons-box, centrando i suoi items con un gap */
 .bottons-box .btn {
+    font-size: 18px;
     margin: 10px;
+    padding: 5px;
 }
 
 .btn:hover {
@@ -99,7 +101,7 @@ BODY CONTAINER
 .monopattino-box {
     max-width: 100%;
     height: auto;
-    margin: 5%;
+    margin: 4%;
 }
 
 .modello {

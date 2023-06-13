@@ -1,0 +1,142 @@
+/* --------------------
+PROPRIETA' GENERALI
+----------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./background.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------------
+    CONTAINER NERO
+----------------------- */
+
+.container {
+    /* Centro il container nero al centro della viewport */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    /* Voglio la larghezza del container l'80 % della larghezza del body, cioè della larghezza del viewport */
+    height: auto;
+    /* Mentre l'altezza varia in base al contenuto */
+    background-color: rgba(0, 0, 0, 0.441);
+    border-radius: 15px;
+}
+
+/* --------------------
+        HEADER
+----------------------- */
+
+/* voglio rendere il tutto RESPONSIVE, dunque uso display:flex ovunque dove posso.
+ Voglio che il container dell'header, che contiene logo, titolo e 3 bottoni,
+ sia centrato nel container nero, con display flex e flex-direction:column */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container img {
+    max-width: 15%;
+
+}
+
+.logo-img,
+.motto,
+.bottons-box {
+    margin: 10px 0px 10px 0px;
+}
+
+.motto {
+    color: rgb(26, 255, 0);
+}
+
+.bottons-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(26, 255, 0);
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* poichè i bottoni dentro il loro box non sono più flex items, devo
+per forza rimettere display:flex al buttons-box, centrando i suoi items con un gap */
+.bottons-box .btn {
+    padding: 5px;
+    margin: 10px 0 10px 0;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+/* -----------
+BODY CONTAINER
+------------- */
+
+.body-container {
+    max-width: 100%;
+    height: auto;
+    color: white;
+    font-weight: bold;
+}
+
+.monopattino-box {
+    max-width: 100%;
+    height: auto;
+    margin: 5%;
+}
+
+.modello {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.progress-container {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.progress-state-1 {
+    width: 50%;
+    height: 20px;
+    background-color: rgb(255, 204, 0);
+    border-radius: 5px;
+}
+.progress-state-2 {
+    width: 75%;
+    height: 20px;
+    background-color: rgb(26, 255, 0);
+    border-radius: 5px;
+}
+.progress-state-3 {
+    width: 25%;
+    height: 20px;
+    background-color: rgb(177, 0, 0);
+    border-radius: 5px;
+}
+
+.input,
+.modello,
+.position,
+.progress-label,
+.progress-container {
+    margin-top: 5px;
+}

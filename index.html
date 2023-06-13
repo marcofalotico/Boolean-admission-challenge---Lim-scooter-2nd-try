@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importo il CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Lim App</title>
+</head>
+
+<body>
+    <!-- creo il container principale -->
+    <div class="container">
+
+        <!-- dentro il container principale suddivido in HEADER e BODY
+        così da centrare il tutto più facilmente -->
+
+        <!-- HEADER CONTAINER -->
+        <div class="header-container">
+            <img src="./logo.png" alt="Logo Lim" class="logo-img">
+            <h2 class="motto">Taking Booleaners from A to B</h2>
+            <div class="bottons-box">
+                <button class="btn prenota">Prenota</button>
+                <button class="btn termina-prenotazione">Termina Prenotazione</button>
+                <button class="btn accendi-luci">Accendi Luci</button>
+            </div>
+        </div>
+
+        <!-- BODY CONTAINER -->
+        <div class="body-container">
+
+            <!-- creo il box per ogni singolo monopattino -->
+            <!-- monopattino 1 -->
+            <div class="monopattino-box">
+                <input type="checkbox" class="input">
+                <span class="modello">Monopattino Gino22</span>
+                <div class="position">&#8594; Via Guadalametri - a 220 metri da te</div>
+                <div class="progress-element">
+                    <p class="progress-label">Stato di carica:</p>
+                    <div class="progress-container">
+                        <div class="progress-state-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- monopattino 2 -->
+            <div class="monopattino-box">
+                <input type="checkbox" class="input">
+                <span class="modello">Monopattino Mike24</span>
+                <div class="position">&#8594; Via Ricciardoni - a 420 metri da te</div>
+                <div class="progress-element">
+                    <p class="progress-label">Stato di carica:</p>
+                    <div class="progress-container">
+                        <div class="progress-state-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- monopattino 3 -->
+            <div class="monopattino-box">
+                <input type="checkbox" class="input">
+                <span class="modello">Monopattino Fede154</span>
+                <div class="position">&#8594; Via Mentarini - a 490 metri da te</div>
+                <div class="progress-element">
+                    <p class="progress-label">Stato di carica:</p>
+                    <div class="progress-container">
+                        <div class="progress-state-3"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -57,19 +57,20 @@ body {
 .logo-img,
 .motto,
 .bottons-box {
-    margin: 10px 0px 10px 0px;
+    margin: 10px;
 }
 
 .motto {
+    text-align: center;
     color: rgb(26, 255, 0);
 }
 
 .bottons-box {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
     background-color: rgb(26, 255, 0);
-    width: 80%;
+    width: 90%;
     height: auto;
     border-radius: 5px;
 }
@@ -77,8 +78,7 @@ body {
 /* poichè i bottoni dentro il loro box non sono più flex items, devo
 per forza rimettere display:flex al buttons-box, centrando i suoi items con un gap */
 .bottons-box .btn {
-    padding: 5px;
-    margin: 10px 0 10px 0;
+    margin: 10px;
 }
 
 .btn:hover {
